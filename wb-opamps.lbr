@@ -285,22 +285,21 @@
 <text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
-<symbol name="OP07D">
+<symbol name="OP07">
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-2.54" y1="-5.08" x2="7.62" y2="0" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
-<pin name="INVERTINGA(---)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in"/>
-<pin name="NON-INVERTING(+++)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="INVERTINGA(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="NON-INVERTING(+)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
 <pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="V-" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="V+" x="2.54" y="5.08" visible="pad" length="short" direction="pwr" rot="R270"/>
-<text x="7.62" y="-3.81" size="1.778" layer="96" align="center">OP07D</text>
-<pin name="NULL(1)" x="0" y="6.35" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="NULL(8)" x="0" y="-6.35" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="TRIM(1)" x="0" y="6.35" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="TRIM(8)" x="0" y="-6.35" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="NC" x="5.08" y="3.81" visible="pad" length="short" direction="nc" rot="R270"/>
+<text x="2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="OP27">
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
@@ -317,23 +316,6 @@
 <text x="7.62" y="-3.81" size="1.778" layer="96" align="center">OP27</text>
 <pin name="BAL(1)" x="0" y="6.35" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="BAL(8)" x="0" y="-6.35" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="NC" x="5.08" y="3.81" visible="pad" length="short" direction="nc" rot="R270"/>
-</symbol>
-<symbol name="LM741">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="7.62" y2="0" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
-<pin name="INVERTINGA(---)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in"/>
-<pin name="NON-INVERTING(+++)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
-<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="V-" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="V+" x="2.54" y="5.08" visible="pad" length="short" direction="pwr" rot="R270"/>
-<text x="7.62" y="-3.81" size="1.778" layer="96" align="center">LM741</text>
-<pin name="NULL(1)" x="0" y="6.35" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="NULL(5)" x="0" y="-6.35" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="NC" x="5.08" y="3.81" visible="pad" length="short" direction="nc" rot="R270"/>
 </symbol>
 <symbol name="OPA134">
@@ -354,26 +336,13 @@
 <pin name="NC" x="0" y="-6.35" visible="pad" length="short" direction="nc" rot="R90"/>
 </symbol>
 <symbol name="TYP-PWR">
-<pin name="V+" x="0" y="7.62" visible="off" length="middle" direction="pwr" rot="R270"/>
-<pin name="V-" x="0" y="-7.62" visible="off" length="middle" direction="pwr" rot="R90"/>
-<text x="2.54" y="7.62" size="1.778" layer="97" align="center">+V</text>
-<text x="2.54" y="-7.62" size="1.778" layer="97" align="center">-V</text>
+<pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<text x="2.54" y="6.35" size="1.778" layer="97" align="center">+</text>
+<text x="2.54" y="-6.35" size="1.778" layer="97" align="center">-</text>
 <text x="2.54" y="0" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 </symbol>
-<symbol name="OPA1677">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="7.62" y2="0" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
-<pin name="INVERTING(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in"/>
-<pin name="NON-INVERTING(+)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
-<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-<text x="8.89" y="-3.81" size="1.778" layer="96" align="center">OPA1677</text>
-<text x="-2.54" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-</symbol>
-<symbol name="TYP-OP(1)">
+<symbol name="LM741">
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-2.54" y1="-5.08" x2="7.62" y2="0" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
@@ -448,6 +417,9 @@
 </devices>
 </deviceset>
 <deviceset name="TL072" prefix="IC">
+<description>Low-Noise FET-Input Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/tl072.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
@@ -487,6 +459,9 @@
 </devices>
 </deviceset>
 <deviceset name="TL074" prefix="IC">
+<description>Low-Noise FET-Input Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/tl074.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="-10.16" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="10.16" y="7.62"/>
@@ -540,6 +515,9 @@
 </devices>
 </deviceset>
 <deviceset name="TL082" prefix="IC">
+<description>FET-Input Operational Amplifiers
+
+https://www.ti.com/lit/ds/symlink/tl082.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
@@ -579,6 +557,9 @@
 </devices>
 </deviceset>
 <deviceset name="TL084" prefix="IC">
+<description>FET-Input Operational Amplifiers
+
+https://www.ti.com/lit/ds/symlink/tl084.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="-10.16" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="10.16" y="7.62"/>
@@ -710,6 +691,9 @@
 </devices>
 </deviceset>
 <deviceset name="RC4558" prefix="IC">
+<description>Dual General-Purpose Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/rc4558.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
@@ -749,6 +733,9 @@
 </devices>
 </deviceset>
 <deviceset name="TL062" prefix="IC">
+<description>Low-Power JFET-Input Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/tl062.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
@@ -788,6 +775,9 @@
 </devices>
 </deviceset>
 <deviceset name="TL064" prefix="IC">
+<description>Low-Power JFET-Input Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/tl064.pdf</description>
 <gates>
 <gate name="A" symbol="TYP-OP" x="-10.16" y="7.62"/>
 <gate name="B" symbol="TYP-OP" x="10.16" y="7.62"/>
@@ -842,7 +832,7 @@
 </deviceset>
 <deviceset name="LM741" prefix="IC">
 <gates>
-<gate name="A" symbol="TYP-OP(1)" x="7.62" y="0"/>
+<gate name="A" symbol="LM741" x="7.62" y="0"/>
 <gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
 </gates>
 <devices>
@@ -868,6 +858,123 @@
 <connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
 <connect gate="A" pin="NULL(1)" pad="1"/>
 <connect gate="A" pin="NULL(5)" pad="5"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPTEST-DIL08" prefix="IC">
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPTEST-DIL14" prefix="IC">
+<gates>
+<gate name="A" symbol="TYP-OP" x="-10.16" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="10.16" y="7.62"/>
+<gate name="C" symbol="TYP-OP" x="-10.16" y="-7.62"/>
+<gate name="D" symbol="TYP-OP" x="10.16" y="-7.62"/>
+<gate name="E" symbol="TYP-PWR" x="-25.4" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL14">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="INVERTING(-)" pad="9"/>
+<connect gate="C" pin="NON-INVERTING(+)" pad="10"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="INVERTING(-)" pad="13"/>
+<connect gate="D" pin="NON-INVERTING(+)" pad="12"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="E" pin="V+" pad="4"/>
+<connect gate="E" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OP07" prefix="IC">
+<description>Ultralow Offset Voltage Operational Amplifier
+
+https://www.analog.com/media/en/technical-documentation/data-sheets/op07.pdf</description>
+<gates>
+<gate name="A" symbol="OP07" x="7.62" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NC" pad="5"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="A" pin="TRIM(1)" pad="1"/>
+<connect gate="A" pin="TRIM(8)" pad="8"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NC" pad="5"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="A" pin="TRIM(1)" pad="1"/>
+<connect gate="A" pin="TRIM(8)" pad="8"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA1677" prefix="IC">
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="B" pin="V+" pad="7"/>
 <connect gate="B" pin="V-" pad="4"/>
