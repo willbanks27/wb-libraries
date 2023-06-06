@@ -985,6 +985,89 @@ https://www.analog.com/media/en/technical-documentation/data-sheets/op07.pdf</de
 </device>
 </devices>
 </deviceset>
+<deviceset name="OPA134" prefix="IC">
+<description>High Performance Audio Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/opa134.pdf</description>
+<gates>
+<gate name="A" symbol="OP07" x="7.62" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NC" pad="5"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="A" pin="TRIM(1)" pad="1"/>
+<connect gate="A" pin="TRIM(8)" pad="8"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NC" pad="5"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="A" pin="TRIM(1)" pad="1"/>
+<connect gate="A" pin="TRIM(8)" pad="8"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA2134" prefix="IC">
+<description>Low-Noise FET-Input Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/opa2134.pdf</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
