@@ -1390,6 +1390,132 @@ https://www.ti.com/lit/ds/symlink/tlc2272.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TLC27L2" prefix="IC">
+<description>Low-Noise FET-Input Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/tlc27l2</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RC4559" prefix="IC">
+<description>Dual General-Purpose Operational Amplifier
+
+https://www.ti.com/lit/ds/symlink/rc4559.pdf</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA2604" prefix="IC">
+<description>Dual FET-Input, Low Distortion Operational Amplifier
+
+https://www.digikey.com/htmldatasheets/production/3362271/0/0/1/opa2604.html</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
