@@ -1155,6 +1155,241 @@ https://www.ti.com/lit/ds/symlink/opa2134.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="NJM062" prefix="IC">
+<description>J-Fet Operational Amplifier
+
+https://www.mouser.com/datasheet/2/294/NJM062_NJM064_E-221965.pdf</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NJM064" prefix="IC">
+<description>J-Fet Operational Amplifier
+
+https://www.mouser.com/datasheet/2/294/NJM062_NJM064_E-221965.pdf</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="-10.16" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="10.16" y="7.62"/>
+<gate name="C" symbol="TYP-OP" x="-10.16" y="-7.62"/>
+<gate name="D" symbol="TYP-OP" x="10.16" y="-7.62"/>
+<gate name="E" symbol="TYP-PWR" x="-25.4" y="0"/>
+</gates>
+<devices>
+<device name="S" package="S014">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="INVERTING(-)" pad="9"/>
+<connect gate="C" pin="NON-INVERTING(+)" pad="10"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="INVERTING(-)" pad="13"/>
+<connect gate="D" pin="NON-INVERTING(+)" pad="12"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="E" pin="V+" pad="4"/>
+<connect gate="E" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="DIL14">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="INVERTING(-)" pad="9"/>
+<connect gate="C" pin="NON-INVERTING(+)" pad="10"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="INVERTING(-)" pad="13"/>
+<connect gate="D" pin="NON-INVERTING(+)" pad="12"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="E" pin="V+" pad="4"/>
+<connect gate="E" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM833" prefix="IC">
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLC2272" prefix="IC">
+<description>Advanced LinCMOS Rail-to-Rail Operational Amplifiers
+
+https://www.ti.com/lit/ds/symlink/tlc2272.pdf</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLC2274" prefix="IC">
+<description>Advanced LinCMOS Rail-to-Rail Operational Amplifiers
+
+https://www.ti.com/lit/ds/symlink/tlc2272.pdf</description>
+<gates>
+<gate name="A" symbol="TYP-OP" x="-10.16" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="10.16" y="7.62"/>
+<gate name="C" symbol="TYP-OP" x="-10.16" y="-7.62"/>
+<gate name="D" symbol="TYP-OP" x="10.16" y="-7.62"/>
+<gate name="E" symbol="TYP-PWR" x="-25.4" y="0"/>
+</gates>
+<devices>
+<device name="S" package="S014">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="INVERTING(-)" pad="9"/>
+<connect gate="C" pin="NON-INVERTING(+)" pad="10"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="INVERTING(-)" pad="13"/>
+<connect gate="D" pin="NON-INVERTING(+)" pad="12"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="E" pin="V+" pad="4"/>
+<connect gate="E" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="DIL14">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="INVERTING(-)" pad="9"/>
+<connect gate="C" pin="NON-INVERTING(+)" pad="10"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="INVERTING(-)" pad="13"/>
+<connect gate="D" pin="NON-INVERTING(+)" pad="12"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="E" pin="V+" pad="4"/>
+<connect gate="E" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
