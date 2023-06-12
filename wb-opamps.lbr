@@ -207,10 +207,10 @@
 <text x="-2.54" y="0" size="1.016" layer="27" ratio="10" rot="SR0" align="center-left">&gt;VALUE</text>
 </package>
 <package name="SO08">
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -220,27 +220,27 @@
 <smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <text x="-1.91" y="0" size="0.6096" layer="27" rot="R180" align="center-right">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="21"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
 <text x="-3.17" y="0" size="0.6096" layer="25" ratio="10" rot="SR90" align="center">&gt;NAME</text>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="21"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="21"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="21"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="21"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="21"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="21"/>
 </package>
 <package name="S014">
 <text x="-1.27" y="0" size="0.6096" layer="27" align="center-left">&gt;VALUE</text>
 <text x="-5.08" y="0" size="0.6096" layer="25" rot="R270" align="center">&gt;NAME</text>
-<wire x1="4.305" y1="-1.9" x2="-4.305" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="-1.9" x2="-4.305" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="-1.4" x2="-4.305" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="4.305" y1="-1.4" x2="-4.305" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="4.305" y1="1.9" x2="4.305" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="4.305" y1="-1.4" x2="4.305" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-4.305" y1="1.9" x2="4.305" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="4.305" y1="-1.9" x2="-4.305" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-4.305" y1="-1.9" x2="-4.305" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-4.305" y1="-1.4" x2="-4.305" y2="1.9" width="0.2032" layer="21"/>
+<wire x1="4.305" y1="-1.4" x2="-4.305" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="4.305" y1="1.9" x2="4.305" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="4.305" y1="-1.4" x2="4.305" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="-4.305" y1="1.9" x2="4.305" y2="1.9" width="0.2032" layer="21"/>
 <smd name="2" x="-2.54" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="13" x="-2.54" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -255,20 +255,20 @@
 <smd name="7" x="3.81" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="10" x="1.27" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="8" x="3.81" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<rectangle x1="-4.055" y1="-3.1" x2="-3.565" y2="-2" layer="51"/>
-<rectangle x1="-2.785" y1="-3.1" x2="-2.295" y2="-2" layer="51"/>
-<rectangle x1="-1.515" y1="-3.1" x2="-1.025" y2="-2" layer="51"/>
-<rectangle x1="-0.245" y1="-3.1" x2="0.245" y2="-2" layer="51"/>
-<rectangle x1="-0.245" y1="2" x2="0.245" y2="3.1" layer="51"/>
-<rectangle x1="-1.515" y1="2" x2="-1.025" y2="3.1" layer="51"/>
-<rectangle x1="-2.785" y1="2" x2="-2.295" y2="3.1" layer="51"/>
-<rectangle x1="-4.055" y1="2" x2="-3.565" y2="3.1" layer="51"/>
-<rectangle x1="1.025" y1="-3.1" x2="1.515" y2="-2" layer="51"/>
-<rectangle x1="2.295" y1="-3.1" x2="2.785" y2="-2" layer="51"/>
-<rectangle x1="3.565" y1="-3.1" x2="4.055" y2="-2" layer="51"/>
-<rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="51"/>
-<rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="51"/>
-<rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="51"/>
+<rectangle x1="-4.055" y1="-3.1" x2="-3.565" y2="-2" layer="21"/>
+<rectangle x1="-4.055" y1="2" x2="-3.565" y2="3.1" layer="21"/>
+<rectangle x1="-2.785" y1="-3.1" x2="-2.295" y2="-2" layer="21"/>
+<rectangle x1="-1.515" y1="-3.1" x2="-1.025" y2="-2" layer="21"/>
+<rectangle x1="-0.245" y1="-3.1" x2="0.245" y2="-2" layer="21"/>
+<rectangle x1="1.025" y1="-3.1" x2="1.515" y2="-2" layer="21"/>
+<rectangle x1="2.295" y1="-3.1" x2="2.785" y2="-2" layer="21"/>
+<rectangle x1="3.565" y1="-3.1" x2="4.055" y2="-2" layer="21"/>
+<rectangle x1="-2.785" y1="2" x2="-2.295" y2="3.1" layer="21"/>
+<rectangle x1="-1.515" y1="2" x2="-1.025" y2="3.1" layer="21"/>
+<rectangle x1="-0.245" y1="2" x2="0.245" y2="3.1" layer="21"/>
+<rectangle x1="1.025" y1="2" x2="1.515" y2="3.1" layer="21"/>
+<rectangle x1="2.295" y1="2" x2="2.785" y2="3.1" layer="21"/>
+<rectangle x1="3.565" y1="2" x2="4.055" y2="3.1" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -357,6 +357,26 @@
 <pin name="NULL(5)" x="0" y="-6.35" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="NC" x="5.08" y="3.81" visible="pad" length="short" direction="nc" rot="R270"/>
 <text x="2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="LM301">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="-3.81" x2="5.08" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="7.62" y2="0" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="INVERTINGA(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="NON-INVERTING(+)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="BAL/COMP(1)" x="0" y="-5.08" visible="pad" length="point" direction="in" swaplevel="2" rot="R90"/>
+<pin name="BALANCE(5)" x="2.54" y="-5.08" visible="pad" length="short" direction="in" swaplevel="3" rot="R90"/>
+<pin name="COMP(8)" x="5.08" y="-5.08" visible="pad" length="short" direction="in" swaplevel="4" rot="R90"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1509,6 +1529,83 @@ https://www.digikey.com/htmldatasheets/production/3362271/0/0/1/opa2604.html</de
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="C" pin="V+" pad="8"/>
 <connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP002" prefix="IC">
+<gates>
+<gate name="A" symbol="TYP-OP" x="5.08" y="7.62"/>
+<gate name="B" symbol="TYP-OP" x="5.08" y="-7.62"/>
+<gate name="C" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTING(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="INVERTING(-)" pad="6"/>
+<connect gate="B" pin="NON-INVERTING(+)" pad="5"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="V+" pad="8"/>
+<connect gate="C" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM301" prefix="IC">
+<gates>
+<gate name="A" symbol="LM301" x="7.62" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="BAL/COMP(1)" pad="1"/>
+<connect gate="A" pin="BALANCE(5)" pad="5"/>
+<connect gate="A" pin="COMP(8)" pad="8"/>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="BAL/COMP(1)" pad="1"/>
+<connect gate="A" pin="BALANCE(5)" pad="5"/>
+<connect gate="A" pin="COMP(8)" pad="8"/>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
