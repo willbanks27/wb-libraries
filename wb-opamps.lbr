@@ -1576,6 +1576,9 @@ https://www.digikey.com/htmldatasheets/production/3362271/0/0/1/opa2604.html</de
 </devices>
 </deviceset>
 <deviceset name="LM301" prefix="IC">
+<description>Good for temperature sensitive applications.
+
+https://www.ti.com/lit/ds/symlink/lm201a-n.pdf</description>
 <gates>
 <gate name="A" symbol="LM301" x="7.62" y="0"/>
 <gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
