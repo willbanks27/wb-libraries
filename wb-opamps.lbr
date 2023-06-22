@@ -279,7 +279,7 @@
 <wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
-<pin name="INVERTING(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="INVERTING(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
 <pin name="NON-INVERTING(+)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
 <pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
 <text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
@@ -377,6 +377,43 @@
 <text x="-2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 <wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="AD818">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="-3.81" x2="5.08" y2="-1.27" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="7.62" y2="0" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="INVERTINGA(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="NON-INVERTING(+)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="NULL(1)" x="0" y="-5.08" visible="pad" length="point" direction="in" swaplevel="2" rot="R90"/>
+<pin name="NULL(8)" x="5.08" y="-5.08" visible="pad" length="short" direction="in" swaplevel="3" rot="R90"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="CA3130">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-3.81" width="0.4064" layer="94"/>
+<wire x1="0" y1="-3.81" x2="7.62" y2="0" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="0" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="3.175" x2="-1.27" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="INVERTINGA(-)" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="NON-INVERTING(+)" x="-5.08" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="10.16" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="NULL(1)" x="0" y="-5.08" visible="pad" length="point" direction="in" swaplevel="2" rot="R90"/>
+<pin name="STRB" x="5.08" y="3.81" visible="pad" length="short" direction="in" swaplevel="4" rot="R270"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95" align="top-left">&gt;NAME</text>
+<wire x1="0" y1="-5.08" x2="0" y2="-3.81" width="0.1524" layer="94"/>
+<pin name="NULL(5)" x="5.08" y="-3.81" visible="pad" length="short" direction="in" swaplevel="3" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1607,6 +1644,88 @@ https://www.ti.com/lit/ds/symlink/lm201a-n.pdf</description>
 <connect gate="A" pin="INVERTINGA(-)" pad="2"/>
 <connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
 <connect gate="A" pin="OUT" pad="6"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD818">
+<description>Video Op-amp https://www.analog.com/media/en/technical-documentation/data-sheets/ad818.pdf</description>
+<gates>
+<gate name="A" symbol="AD818" x="5.08" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="NULL(1)" pad="1"/>
+<connect gate="A" pin="NULL(8)" pad="8"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="NULL(1)" pad="1"/>
+<connect gate="A" pin="NULL(8)" pad="8"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CA3130">
+<description>BiMOS Op-Amp. Applications: 
+• Sample-Hold Amplifiers
+• Long-Duration Timers/Monostables
+• High-Input-Impedance Comparators
+(Ideal Interface with Digital CMOS)
+• High-Input-Impedance Wideband Amplifiers
+https://www.renesas.com/us/en/document/dst/ca3130-ca3130a-datasheet</description>
+<gates>
+<gate name="A" symbol="CA3130" x="5.08" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-10.16" y="0"/>
+</gates>
+<devices>
+<device name="D" package="DIL08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="NULL(1)" pad="1"/>
+<connect gate="A" pin="NULL(5)" pad="5"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="A" pin="STRB" pad="8"/>
+<connect gate="B" pin="V+" pad="7"/>
+<connect gate="B" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="A" pin="INVERTINGA(-)" pad="2"/>
+<connect gate="A" pin="NON-INVERTING(+)" pad="3"/>
+<connect gate="A" pin="NULL(1)" pad="1"/>
+<connect gate="A" pin="NULL(5)" pad="5"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="A" pin="STRB" pad="8"/>
 <connect gate="B" pin="V+" pad="7"/>
 <connect gate="B" pin="V-" pad="4"/>
 </connects>
