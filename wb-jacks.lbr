@@ -183,9 +183,9 @@
 <wire x1="-1.5" y1="6" x2="-1.5" y2="4" width="0.0508" layer="51"/>
 <wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0.0508" layer="51"/>
 <wire x1="1.5" y1="4" x2="1.5" y2="6" width="0.0508" layer="51"/>
-<pad name="TIP" x="0" y="5" drill="1.1" thermals="no"/>
-<pad name="SWITCH" x="0" y="-3.5" drill="1.1"/>
-<pad name="SLEEVE" x="0" y="-6.5" drill="1.1"/>
+<pad name="L/TIP" x="0" y="5" drill="1.1" thermals="no"/>
+<pad name="R/SW" x="0" y="-3.5" drill="1.1"/>
+<pad name="GND/SLV" x="0" y="-6.5" drill="1.1"/>
 <circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="-4.6" x2="-0.2" y2="-6.7" width="0.0508" layer="51"/>
 <wire x1="-0.2" y1="-6.7" x2="0.2" y2="-6.7" width="0.0508" layer="51"/>
@@ -220,6 +220,25 @@
 <text x="-4.7498" y="-4.4704" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <rectangle x1="-2.8" y1="-2.8" x2="2.8" y2="2.8" layer="41"/>
 </package>
+<package name="PJ3410ST">
+<pad name="SWITCH" x="-3.3" y="0" drill="0.3302" diameter="1.9304" shape="long" rot="R90"/>
+<pad name="GND/SLV" x="3.3" y="0" drill="0.3302" diameter="1.9304" shape="long" rot="R90"/>
+<pad name="LEFT" x="0" y="3.1" drill="0.3302" diameter="1.9304" shape="long"/>
+<pad name="RIGHT" x="0" y="-4.1" drill="0.3302" diameter="1.9304" shape="long"/>
+<wire x1="-3.7" y1="1.3" x2="-3.7" y2="-1.3" width="0.85" layer="46"/>
+<wire x1="3.7" y1="1.3" x2="3.7" y2="-1.3" width="0.85" layer="46"/>
+<wire x1="-1.3" y1="3.5" x2="1.3" y2="3.5" width="0.85" layer="46"/>
+<wire x1="-1.3" y1="-4.5" x2="1.3" y2="-4.5" width="0.85" layer="46"/>
+<wire x1="-4.5" y1="-5.6" x2="-4.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="4.5" x2="-2.54" y2="5" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="5" x2="2.54" y2="5" width="0.127" layer="21"/>
+<wire x1="2.54" y1="5" x2="4.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="4.5" y1="4.5" x2="4.5" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-5.6" x2="-4.5" y2="-5.6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="5" width="0.05" layer="51"/>
+<circle x="0" y="0" radius="3.6" width="0.05" layer="51"/>
+<text x="-4.445" y="-6.985" size="1.27" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STEREO">
@@ -229,7 +248,7 @@
 <text x="5.08" y="0.254" size="0.8128" layer="97" rot="MR0">L</text>
 <text x="5.08" y="2.794" size="0.8128" layer="97" distance="25" rot="MR0">R</text>
 <text x="5.08" y="-2.286" size="0.8128" layer="97" rot="MR0">GND</text>
-<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -238,7 +257,7 @@
 <wire x1="-2.54" y1="1.27" x2="-3.81" y2="2.54" width="0.1524" layer="94"/>
 <pin name="RIGHT" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="LEFT" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="MONO">
 <wire x1="0" y1="-2.54" x2="-7.112" y2="-2.54" width="0.1524" layer="94"/>
@@ -262,32 +281,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PJ3410" prefix="J">
-<gates>
-</gates>
-<devices>
-<device name="" package="PJ3410M">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PJ366ST" prefix="J" uservalue="yes">
-<description>Stereo jack.
-
-https://www.thonk.co.uk/shop/thonkiconn/</description>
-<gates>
-<gate name="J" symbol="STEREO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PJ366ST">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MONO" prefix="J">
 <description>Mono jack. https://www.thonk.co.uk/shop/thonkiconn/</description>
 <gates>
@@ -304,11 +297,38 @@ https://www.thonk.co.uk/shop/thonkiconn/</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="PJ3410M">
+<device name="3410M" package="PJ3410M">
 <connects>
 <connect gate="J" pin="SLEEVE-GND" pad="GND"/>
 <connect gate="J" pin="SWITCH-NORM" pad="SWITCH"/>
 <connect gate="J" pin="TIP-SIG" pad="SIGNAL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STEREO" prefix="J" uservalue="yes">
+<gates>
+<gate name="J" symbol="STEREO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3410ST" package="PJ3410ST">
+<connects>
+<connect gate="J" pin="1(SLEEVE)" pad="GND/SLV"/>
+<connect gate="J" pin="LEFT" pad="LEFT"/>
+<connect gate="J" pin="RIGHT" pad="RIGHT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="366ST" package="PJ366ST">
+<connects>
+<connect gate="J" pin="1(SLEEVE)" pad="GND/SLV"/>
+<connect gate="J" pin="LEFT" pad="L/TIP"/>
+<connect gate="J" pin="RIGHT" pad="R/SW"/>
 </connects>
 <technologies>
 <technology name=""/>
