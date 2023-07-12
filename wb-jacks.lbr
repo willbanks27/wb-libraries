@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -247,7 +247,7 @@
 <text x="5.08" y="0.254" size="0.8128" layer="97" rot="MR0">L</text>
 <text x="5.08" y="2.794" size="0.8128" layer="97" distance="25" rot="MR0">R</text>
 <text x="5.08" y="-2.286" size="0.8128" layer="97" rot="MR0">GND</text>
-<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -256,7 +256,7 @@
 <wire x1="-2.54" y1="1.27" x2="-3.81" y2="2.54" width="0.1524" layer="94"/>
 <pin name="RIGHT" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="LEFT" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="-5.08" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="MONO">
 <wire x1="0" y1="-2.54" x2="-7.112" y2="-2.54" width="0.1524" layer="94"/>
@@ -268,7 +268,7 @@
 <wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-4.064" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-4.064" y1="1.016" x2="-4.826" y2="1.778" width="0.1524" layer="94"/>
-<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <rectangle x1="-10.414" y1="-0.508" x2="-4.826" y2="0.508" layer="94" rot="R90"/>
 <pin name="SLEEVE-GND" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="TIP-SIG" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
@@ -276,12 +276,11 @@
 <text x="2.54" y="2.794" size="0.8128" layer="97" rot="MR0">SIG</text>
 <text x="2.54" y="0.254" size="0.8128" layer="97" distance="25" rot="MR0">NRM</text>
 <text x="2.54" y="-2.286" size="0.8128" layer="97" rot="MR0">GND</text>
-<text x="-7.62" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MONO" prefix="J">
-<description>Mono jack. https://www.thonk.co.uk/shop/thonkiconn/</description>
+<deviceset name="MONO" prefix="J" uservalue="yes">
 <gates>
 <gate name="J" symbol="MONO" x="0" y="0"/>
 </gates>
