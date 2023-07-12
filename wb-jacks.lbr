@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -238,6 +240,56 @@
 <circle x="0" y="0" radius="3.6" width="0.05" layer="51"/>
 <text x="-3.81" y="5.715" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="HEADER">
+<wire x1="-1.524" y1="-1.27" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="-1.27" x2="1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-1.27" x2="3.556" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.016" x2="3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="1.27" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="1.27" x2="-1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="-1.524" y2="1.27" width="0.1524" layer="21"/>
+<pad name="GND" x="-2.54" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="NORM" x="0" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="TIP-SIG" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<text x="-3.81" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-3.556" y1="-1.27" x2="-1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="1.27" x2="-1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.556" y1="1.27" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.016" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-2.86" y1="0.768" x2="-3.308" y2="0.32" width="0.1016" layer="21"/>
+<wire x1="-3.308" y1="0.32" x2="-3.308" y2="-0.32" width="0.1016" layer="21"/>
+<wire x1="-3.308" y1="-0.32" x2="-2.86" y2="-0.768" width="0.1016" layer="21"/>
+<wire x1="-2.86" y1="-0.768" x2="-2.22" y2="-0.768" width="0.1016" layer="21"/>
+<wire x1="-2.22" y1="-0.768" x2="-1.772" y2="-0.32" width="0.1016" layer="21"/>
+<wire x1="-1.772" y1="-0.32" x2="-1.772" y2="0.32" width="0.1016" layer="21"/>
+<wire x1="-1.772" y1="0.32" x2="-2.22" y2="0.768" width="0.1016" layer="21"/>
+<wire x1="-2.22" y1="0.768" x2="-2.86" y2="0.768" width="0.1016" layer="21"/>
+<wire x1="-0.32" y1="0.768" x2="-0.768" y2="0.32" width="0.1016" layer="21"/>
+<wire x1="-0.768" y1="0.32" x2="-0.768" y2="-0.32" width="0.1016" layer="21"/>
+<wire x1="-0.768" y1="-0.32" x2="-0.32" y2="-0.768" width="0.1016" layer="21"/>
+<wire x1="-0.32" y1="-0.768" x2="0.32" y2="-0.768" width="0.1016" layer="21"/>
+<wire x1="0.32" y1="-0.768" x2="0.768" y2="-0.32" width="0.1016" layer="21"/>
+<wire x1="0.768" y1="-0.32" x2="0.768" y2="0.32" width="0.1016" layer="21"/>
+<wire x1="0.768" y1="0.32" x2="0.32" y2="0.768" width="0.1016" layer="21"/>
+<wire x1="0.32" y1="0.768" x2="-0.32" y2="0.768" width="0.1016" layer="21"/>
+<wire x1="2.22" y1="0.768" x2="1.772" y2="0.32" width="0.1016" layer="21"/>
+<wire x1="1.772" y1="0.32" x2="1.772" y2="-0.32" width="0.1016" layer="21"/>
+<wire x1="1.772" y1="-0.32" x2="2.22" y2="-0.768" width="0.1016" layer="21"/>
+<wire x1="2.22" y1="-0.768" x2="2.86" y2="-0.768" width="0.1016" layer="21"/>
+<wire x1="2.86" y1="-0.768" x2="3.308" y2="-0.32" width="0.1016" layer="21"/>
+<wire x1="3.308" y1="-0.32" x2="3.308" y2="0.32" width="0.1016" layer="21"/>
+<wire x1="3.308" y1="0.32" x2="2.86" y2="0.768" width="0.1016" layer="21"/>
+<wire x1="2.86" y1="0.768" x2="2.22" y2="0.768" width="0.1016" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STEREO">
@@ -247,7 +299,7 @@
 <text x="5.08" y="0.254" size="0.8128" layer="97" rot="MR0">L</text>
 <text x="5.08" y="2.794" size="0.8128" layer="97" distance="25" rot="MR0">R</text>
 <text x="5.08" y="-2.286" size="0.8128" layer="97" rot="MR0">GND</text>
-<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
 <wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -256,7 +308,7 @@
 <wire x1="-2.54" y1="1.27" x2="-3.81" y2="2.54" width="0.1524" layer="94"/>
 <pin name="RIGHT" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="LEFT" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="-5.08" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="MONO">
 <wire x1="0" y1="-2.54" x2="-7.112" y2="-2.54" width="0.1524" layer="94"/>
@@ -268,7 +320,7 @@
 <wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-4.064" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="-4.064" y1="1.016" x2="-4.826" y2="1.778" width="0.1524" layer="94"/>
-<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="3.81" size="1.778" layer="95">&gt;NAME</text>
 <rectangle x1="-10.414" y1="-0.508" x2="-4.826" y2="0.508" layer="94" rot="R90"/>
 <pin name="SLEEVE-GND" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="TIP-SIG" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
@@ -276,7 +328,7 @@
 <text x="2.54" y="2.794" size="0.8128" layer="97" rot="MR0">SIG</text>
 <text x="2.54" y="0.254" size="0.8128" layer="97" distance="25" rot="MR0">NRM</text>
 <text x="2.54" y="-2.286" size="0.8128" layer="97" rot="MR0">GND</text>
-<text x="-7.62" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -300,6 +352,16 @@
 <connect gate="J" pin="SLEEVE-GND" pad="GND"/>
 <connect gate="J" pin="SWITCH-NORM" pad="SWITCH"/>
 <connect gate="J" pin="TIP-SIG" pad="SIGNAL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HDR" package="HEADER">
+<connects>
+<connect gate="J" pin="SLEEVE-GND" pad="GND"/>
+<connect gate="J" pin="SWITCH-NORM" pad="NORM"/>
+<connect gate="J" pin="TIP-SIG" pad="TIP-SIG"/>
 </connects>
 <technologies>
 <technology name=""/>
