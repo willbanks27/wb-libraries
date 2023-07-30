@@ -596,8 +596,8 @@
 <deviceset name="AS3080" prefix="IC">
 <description>http://www.alfarzpp.lv/eng/sc/AS3080E.pdf</description>
 <gates>
-<gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
 <gate name="A" symbol="TYP-OTA.DBI" x="7.62" y="0"/>
+<gate name="B" symbol="TYP-PWR" x="-7.62" y="0"/>
 </gates>
 <devices>
 <device name="D" package="DIL08">
