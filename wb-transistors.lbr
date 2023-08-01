@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="12.5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -498,6 +498,37 @@
 <wire x1="-0.508" y1="0.635" x2="-0.508" y2="-0.635" width="0.1524" layer="94"/>
 <wire x1="-1.778" y1="0" x2="-0.508" y2="0.635" width="0.1524" layer="94"/>
 <wire x1="-0.508" y1="-0.635" x2="-1.778" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="DARLINGTON">
+<wire x1="0" y1="2.54" x2="-2.032" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-0.762" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-1" y1="-2.04" x2="-2.232" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-2.413" x2="-0.254" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="-0.254" y1="-2.413" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.778" x2="-1.016" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-2.286" x2="-0.635" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-2.286" x2="-0.762" y2="-2.032" width="0.254" layer="94"/>
+<text x="-5.08" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-2.54" x2="-2.032" y2="2.54" layer="94"/>
+<pin name="BUFF-IN" x="-5.08" y="0" visible="off" length="short" swaplevel="2"/>
+<wire x1="1.524" y1="-0.508" x2="0.508" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-4.064" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.778" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-4.58" x2="0.308" y2="-3.964" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-4.953" x2="2.286" y2="-4.953" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-4.953" x2="1.778" y2="-4.318" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-4.318" x2="1.524" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-4.826" x2="1.905" y2="-4.826" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-4.826" x2="1.778" y2="-4.572" width="0.254" layer="94"/>
+<rectangle x1="-0.254" y1="-5.08" x2="0.508" y2="0" layer="94"/>
+<pin name="BUFF-OUT" x="2.54" y="-7.62" visible="off" length="short" swaplevel="3" rot="R90"/>
+<wire x1="1.524" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-0.508" x2="1.524" y2="2.54" width="0.1524" layer="94"/>
+<pin name="C" x="0" y="5.08" visible="off" length="short" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
